@@ -1,6 +1,7 @@
 ## Network View
 
-**Network Views** are the gateway to creating networked multiplayer games in Unity.  They are simple to use, but they are extremely powerful.  For this reason, it is recommended that you understand the fundamental concepts behind networking before you start experimenting with Network Views.  You can learn and discover the fundamental concepts in the [[Network Reference Guide]].
+**Network Views** are the gateway to creating networked multiplayer games in Unity.  
+They are simple to use, but they are extremely powerful.  For this reason, it is recommended that you understand the fundamental concepts behind networking before you start experimenting with Network Views.  You can learn and discover the fundamental concepts in the [[Network Reference Guide]].
 
 
 ![NetworkViewInspector](http://docs.unity3d.com/Documentation/Images/manual/class-NetworkView-0.jpg)
@@ -26,8 +27,8 @@ In order to use any networking capabilities, including **State Synchronization**
 
 When you add a Network View to a GameObject, you must decide two things
 
-# What kind of data you want the Network View to send
-# How you want to send that data
+* What kind of data you want the Network View to send
+* How you want to send that data
 
 
 ### Choosing data to send
@@ -85,8 +86,8 @@ If you want to use Remote Procedure Calls in your script all you need is a Netwo
 RPCs are transmitted reliably and ordered. For more information about RPCs, see the [[net-RPCDetails | RPC Details]] page.
 
 
-!!Hints
+##Hints
 
 * Read through the [[Network Reference Guide]] if you're still unclear about how to use Network Views
 * State Synchronization does not need to be disabled to use Remote Procedure Calls
-* If you have more than one Network View and want to call an RPC on a specific one, use *GetComponents(NetworkView)[i].RPC()*.
+* If you have more than one Network View and want to call an RPC on a specific one, use `GetComponents(NetworkView)[i].RPC();`
